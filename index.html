@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joã Swart - Software Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="container">
+            <div id="logo">
+                <a href="#hero">JS</a>
+            </div>
+            <nav id="navbar">
+                <!-- hamburger button -->
+                <button class="hamburger-menu" aria-label="Toggle navigation" aria-expanded="false">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- hero section -->
+        <section id="hero" class="full-height-section dark-section">
+            <!-- geanimeerde achtergrond blobs -->
+            <div class="gradient-decor-blob blob-1"></div>
+            <div class="gradient-decor-blob blob-2"></div>
+            <div class="gradient-decor-blob blob-3"></div>
+            
+            <div class="stars-container" id="hero-stars"></div>
+            <div class="hero-content text-center">
+                <h1>Hi there, I'm <span class="highlight">Joã Swart</span>.</h1>
+                <p class="lead">I am a <span id="typed-text"></span><span class="cursor-element"></span></p>
+            </div>
+            <a href="#about" class="scroll-down" aria-label="Scroll down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+        
+
+        <!-- about Me -->
+        <section id="about" class="page-section">
+            <div class="container">
+                <h2 class="about-title section-title-custom">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Hello! I'm Joã Swart, 21 years old and passionate about software development. I'm currently studying at MBO Rijnland in Gouda, where I'm actively developing my skills through hands-on projects, coursework, and self-learning. I enjoy experimenting with code, exploring different technologies, and finding creative solutions to real-world problems. Each project I work on is a new opportunity to grow and push my boundaries.</p>
+                        <p>My goal is to combine technical skills with creativity to build innovative, user-friendly software. I'm particularly drawn to full-stack development and UI/UX design, where I can focus on both functionality and visual experience. I love creating interfaces that are not only clean and aesthetic but also intuitive and meaningful for users.</p>
+                        <p>Outside of coding, I'm a big fan of gaming whether it's on my PC, in VR, or on mobile. I also enjoy playing badminton, watching movies, and traveling to experience new places and cultures.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://via.placeholder.com/300x300.png?text=Your+Photo" alt="SELFIE">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="wavy-divider-wrapper">
+          <svg
+            class="wavy-divider-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 50"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+            style="width: 100%; height: 50px;"
+          >
+            <defs>
+              <linearGradient id="waveGradientStrokeAboutDivider" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#04ddfa" />
+                <stop offset="100%" stop-color="#b62cdc" />
+              </linearGradient>
+            </defs>
+            <path
+              d="M0,25 C240,45 300,5 480,25 C660,45 780,5 960,25 C1140,45 1200,5 1440,25"
+              fill="none"
+              stroke="url(#waveGradientStrokeAboutDivider)"
+              stroke-width="5"
+              />
+          </svg>
+        </div>
+
+        <!-- projects -->
+        <section id="projects" class="page-section dark-section">
+            <div class="stars-container" id="contact-stars"></div>
+            <div class="container">
+                <h2 class="section-title">My Projects</h2>
+                <div class="projects-list">
+                    <!-- project 1 -->
+                    <div class="project-item">
+                        <div class="project-item-image">
+                            <img src="images/pokemonbattlesimulator.png" alt="Project 1 Screenshot">
+                        </div>
+                        <div class="project-item-content">
+                            <h3>Meow</h3>
+                            </a>
+                            <p class="project-description">Hier komt een project</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">Javascript</span>
+                                <span class="tag">API</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> View Live</a>
+                                <a href="" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- project 2 -->
+                    <div class="project-item">
+                        <div class="project-item-image">
+                            <img src="images/capybarago.png" alt="Project 2 Screenshot">
+                        </div>
+                        <div class="project-item-content">
+                            <h3>Capybara Go!</h3>
+                            <p class="project-description">A 2D platformer game. Collect apples for your hungry family while dodging enemies and avoiding traps. Fast-paced action with charming visuals and a rewarding challenge.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">Javascript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/JoaSwart/capybarago-projectweek.git" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- project 3 -->
+                    <div class="project-item">
+                        <div class="project-item-image">
+                            <img src="images/oldportfolio.png" alt="Project 2 Screenshot">
+                        </div>
+                        <div class="project-item-content">
+                            <h3>Old Portfolio</h3>
+                            <p class="project-description">This is a previous version of my portfolio, showcasing some of my earlier projects and experiments. It reflects my learning journey and growth as a developer.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">Javascript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--project 4-->
+                    <div class="project-item">
+                        <div class="project-item-image">
+                            <img src="images/pokemonbattlesimulator.png" alt="Project 2 Screenshot">
+                        </div>
+                        <div class="project-item-content">
+                            <h3>Pokemon Batlle Simulator</h3>
+                            <p class="project-description">A turn-based battle simulator built with JavaScript. Choose your Pokémon, use tactical attacks, and experience classic gameplay in a clean, minimal interface.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">Javascript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/JoaSwart/pokemon-battle-simulator.git" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="wavy-divider-wrapper">
+         <svg
+            class="wavy-divider-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 50"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+            style="width: 100%; height: 50px;"
+          >
+            <defs>
+              <linearGradient id="waveGradientStrokeProjectsDivider" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#04ddfa" />
+                <stop offset="100%" stop-color="#b62cdc" />
+              </linearGradient>
+            </defs>
+            <path
+              d="M0,25 C240,45 300,5 480,25 C660,45 780,5 960,25 C1140,45 1200,5 1440,25"
+              fill="none"
+              stroke="url(#waveGradientStrokeProjectsDivider)"
+              stroke-width="5"
+              />
+          </svg>
+        </div>
+
+        <!-- Skills Section -->
+        <section id="skills" class="page-section dark-section">
+            <div class="container">
+                <h2 class="skills-title section-title-custom">Experience</h2>
+                <div class="skills-list-container">
+                    <div class="skills-carousel-track">
+                        <div class="skill-item-showcase">
+                            <i class="fab fa-html5 skill-icon"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item-showcase">
+                            <i class="fab fa-css3-alt skill-icon"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item-showcase">
+                            <i class="fab fa-js-square skill-icon"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item-showcase">
+                            <i class="fab fa-php skill-icon"></i>
+                            <span>PHP</span>
+                        </div>
+                        <div class="skill-item-showcase">
+                            <i class="fab fa-bootstrap skill-icon"></i>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="skill-item-showcase">
+                            <i class="fas fa-database skill-icon"></i> 
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-item-showcase">
+                            <i class="fab fa-git-alt skill-icon"></i>
+                            <span>Git</span>
+                        </div>
+                        <!-- Duplicated Skill Items for seamless loop -->
+                        <div class="skill-item-showcase">
+                            <i class="fab fa-html5 skill-icon"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item-showcase">
+                            <i class="fab fa-css3-alt skill-icon"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item-showcase">
+                            <i class="fab fa-js-square skill-icon"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item-showcase">
+                            <i class="fab fa-php skill-icon"></i>
+                            <span>PHP</span>
+                        </div>
+                        <div class="skill-item-showcase">
+                            <i class="fab fa-bootstrap skill-icon"></i>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="skill-item-showcase">
+                            <i class="fas fa-database skill-icon"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-item-showcase">
+                            <i class="fab fa-git-alt skill-icon"></i>
+                            <span>Git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="wavy-divider-wrapper">
+          <svg
+            class="wavy-divider-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 50"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+            style="width: 100%; height: 50px;"
+          >
+            <defs>
+              <linearGradient id="waveGradientStrokeSkillsDivider" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#04ddfa" />
+                <stop offset="100%" stop-color="#b62cdc" />
+              </linearGradient>
+            </defs>
+            <path
+              d="M0,25 C240,45 300,5 480,25 C660,45 780,5 960,25 C1140,45 1200,5 1440,25"
+              fill="none"
+              stroke="url(#waveGradientStrokeSkillsDivider)"
+              stroke-width="5"
+              />
+          </svg>
+        </div>
+
+        <!-- Contact Section -->
+        <section id="contact" class="page-section dark-section">
+            <div class="stars-container" id="contact-stars"></div>
+            <div class="container">
+                <h2 class="contact-title section-title-custom">Contact Me</h2>
+                <p class="text-center lead-sm">I'm currently looking for internship opportunities. Let's connect!</p>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    
+
+    <footer id="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>© <span id="year"></span> Joã Swart. All Rights Reserved.</p>
+                <div class="social-icons-footer">
+                    <a href="https://github.com/JoaSwart" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/joa-swart" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:leentjezz@outlook.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
