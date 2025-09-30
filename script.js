@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Smooth scroll naar secties bij klikken op een link 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
-            const targetId = this.hash; // bijv. "#about"
+            const targetId = this.hash; // bijv #about
             const targetElement = document.querySelector(targetId);
             
             if (targetElement) {
@@ -31,15 +31,17 @@ document.addEventListener('DOMContentLoaded', () => {
         yearElement.textContent = new Date().getFullYear();
     }
 
-    // contact formulier (fake) afhandeling 
+    
+    // contact formulier afhandeling (nog niet klaar)
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault(); // voorkom echte verzending
-            alert('Thank you for your message! (This is a demo, the form is not connected to a backend.)');
+            alert('Thank you for your message!');
             contactForm.reset(); // maak velden leeg
         });
     }
+    
 
     // Navbar: highlight juiste link afhankelijk van scrollpositie 
     const sections = document.querySelectorAll("section[id]");
