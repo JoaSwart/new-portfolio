@@ -227,5 +227,5 @@ function sendEmail(){
         message : document.getElementById("message").value,
     }
 
-    emailjs.send("service_ym4idag", "template_ho3gamc",parms).then(alert("Email Sent!"));
+    emailjs.send("service_ym4idag", "template_ho3gamc",parms).then(alert("Email Sent!"))
 }
