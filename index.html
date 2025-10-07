@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+            (function(){
+             emailjs.init({
+             publicKey: "YmIrTxQYvnUoaZvB5",
+            });
+        })();
+    </script>
 </head>
 <body>
 
@@ -62,10 +72,10 @@
                     <div class="about-text">
                         <p>Hello! I'm Joã Swart, 21 years old and passionate about software development. I'm currently studying at MBO Rijnland in Gouda, where I'm actively developing my skills through hands-on projects, coursework, and self-learning. I enjoy experimenting with code, exploring different technologies, and finding creative solutions to real-world problems. Each project I work on is a new opportunity to grow and push my boundaries.</p>
                         <p>My goal is to combine technical skills with creativity to build innovative, user-friendly software. I'm particularly drawn to full-stack development and UI/UX design, where I can focus on both functionality and visual experience. I love creating interfaces that are not only clean and aesthetic but also intuitive and meaningful for users.</p>
-                        <p>Outside of coding, I'm a big fan of gaming whether it's on my PC, in VR, or on mobile. I also enjoy playing badminton, watching movies, and traveling to experience new places and cultures.</p>
+                        <p>Outside of coding, I'm a big fan of gaming whether it's on my PC, in VR, or on mobile. I also enjoy playing badminton, watching movies, photography and traveling to experience new places and cultures.</p>
                     </div>
                     <div class="about-image">
-                        <img src="https://via.placeholder.com/300x300.png?text=Your+Photo" alt="SELFIE">
+                        <img src="images/selfie.png" alt="SELFIE">
                     </div>
                 </div>
             </div>
@@ -116,9 +126,9 @@
                                 <span class="tag">Javascript</span>
                             </div>
                             <div class="project-links">
-                                <!--
-                                <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> View Live</a>
-                                -->
+                                
+                                <a href="https://joaswart.github.io/sushihaven/" target="_blank"><i class="fas fa-external-link-alt"></i> View Live</a>
+                                
                                 <a href="https://github.com/JoaSwart/sushihaven.git" target="_blank"><i class="fab fa-github"></i> GitHub</a>
                             </div>
                         </div>
@@ -303,7 +313,7 @@
             <div class="container">
                 <h2 class="contact-title section-title-custom">Contact Me</h2>
                 <p class="text-center lead-sm">I'm currently looking for internship opportunities. Let's connect!</p>
-                <form id="contact-form">
+                <form onsubmit="sendEmail(); reset(); return false;" id="contact-form">
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" required>
@@ -316,7 +326,7 @@
                         <label for="message">Message</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <button type="submit" onclick="sendMail()" class="btn btn-primary">Send Message</button>
                 </form>
             </div>
         </section>

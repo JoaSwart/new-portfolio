@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -591,15 +590,14 @@ p {
 
 .project-item-content {
     flex: 1; 
-    padding: 20px 30px;
+    padding: 20px 10px;
     display: flex;
     flex-direction: column; 
     max-width: 600px; 
-    max-height: 270px;
 }
 
 .project-item:not(.project-item-reversed) .project-item-image {
-    border-right: 1px solid #ffffff44; /* Separator line */
+    border-right: 1px solid #ffffff44; 
 }
 
 .project-item-content h3 {
@@ -1000,6 +998,7 @@ p {
 
     .project-item-content { 
         padding: 20px; 
+        padding-bottom: 0;
     }
 
     .skills-showcase-container { 
