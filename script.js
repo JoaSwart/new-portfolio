@@ -32,13 +32,39 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     
-    // contact formulier afhandeling (nog niet klaar)
+    // contact formulier afhandeling via EmailJS
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
-            e.preventDefault(); // voorkom echte verzending
-            alert('Thank you for your message!');
-            contactForm.reset(); // maak velden leeg
+            e.preventDefault();
+
+            const submitButton = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitButton ? submitButton.textContent : null;
+            if (submitButton) {
+                submitButton.disabled = true;
+                submitButton.textContent = 'Sending...';
+            }
+
+            const params = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                message: document.getElementById('message').value
+            };
+
+            emailjs.send('service_tu37q5q', 'template_ho3gamc', params)
+                .then(function(response) {
+                    alert('Bedankt — je bericht is verzonden.');
+                    contactForm.reset();
+                }, function(error) {
+                    console.error('EmailJS error:', error);
+                    alert('Er is iets misgegaan bij het verzenden. Probeer het later opnieuw.');
+                })
+                .finally(function() {
+                    if (submitButton) {
+                        submitButton.disabled = false;
+                        if (originalText) submitButton.textContent = originalText;
+                    }
+                });
         });
     }
     
@@ -220,12 +246,4 @@ if (contactStarsContainer) createStars(contactStarsContainer, 80); // 80 sterren
 
 });
 
-function sendEmail(){
-    let parms={
-        name : document.getElementById("name").value,
-        email : document.getElementById("email").value,
-        message : document.getElementById("message").value,
-    }
-
-    emailjs.send("service_ym4idag", "template_ho3gamc",parms).then(alert("Email Sent!"))
-}
+// legacy sendEmail function removed — submission handled above
