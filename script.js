@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             emailjs.send('service_tu37q5q', 'template_ho3gamc', params)
                 .then(function(response) {
-                    alert('Bedankt — je bericht is verzonden.');
+                    alert('Bedankt je bericht is verzonden.');
                     contactForm.reset();
                 }, function(error) {
                     console.error('EmailJS error:', error);
